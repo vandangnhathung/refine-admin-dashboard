@@ -43,7 +43,6 @@ export default function RootLayout({
                     dataProvider={dataProvider}
                     notificationProvider={useNotificationProvider}
                     resources={[
-                     
                       {
                         name: "users",
                         list: "/users",
