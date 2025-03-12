@@ -10,7 +10,9 @@ import {
 } from "@refinedev/mui";
 import React from "react";
 
-export default function CategoryList() {
+// RouteList
+
+export default function RouteList() {
   const { dataGridProps } = useDataGrid({});
 
   const columns = React.useMemo<GridColDef[]>(
