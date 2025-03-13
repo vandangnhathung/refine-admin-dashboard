@@ -1,3 +1,2 @@
-export const SUPABASE_URL = "https://kpvlsowbcwpyxodbozog.supabase.co";
-export const SUPABASE_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtwdmxzb3diY3dweXhvZGJvem9nIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE3MTY5MDYsImV4cCI6MjA1NzI5MjkwNn0.RkOqfyXqBNxvnCfDGre2BLYDj0bgHKFdXvNSPGmuCsY";
+export const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL as string;
+export const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY as string;

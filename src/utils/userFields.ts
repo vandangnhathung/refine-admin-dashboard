@@ -16,5 +16,6 @@ export interface UserField {
     { name: "gender", label: "Gender" },
     { name: "birth_date", label: "Birth Date", type: "date" },
     { name: "phone", label: "Phone Number" },
+    { name: "role", label: "Role", adminOnly: true },
   ];
   
