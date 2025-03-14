@@ -46,13 +46,13 @@ export default function UserList() {
         minWidth: 200,
         display: "flex",
       },
-      {
-        field: "birth_date",
-        flex: 1,
-        headerName: "Birth Date",
-        minWidth: 200,
-        display: "flex",
-      },
+      // {
+      //   field: "birth_date",
+      //   flex: 1,
+      //   headerName: "Birth Date",
+      //   minWidth: 200,
+      //   display: "flex",
+      // },
       {
         field: "phone",
         flex: 1,

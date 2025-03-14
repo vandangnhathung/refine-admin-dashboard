@@ -13,9 +13,9 @@ export interface UserField {
     { name: "email", label: "Email", type: "email", required: true },
     { name: "password", label: "Password", type: "password", required: true, adminOnly: true },
     { name: "confirm_password", label: "Confirm Password", type: "password", required: true, adminOnly: true },
-    { name: "gender", label: "Gender" },
-    { name: "birth_date", label: "Birth Date", type: "date" },
-    { name: "phone", label: "Phone Number" },
+    { name: "gender", label: "Gender", required: true },
+    // { name: "birth_date", label: "Birth Date", type: "date", required: true },
+    { name: "phone", label: "Phone Number", required: true },
     { name: "role", label: "Role", adminOnly: true },
   ];
   

@@ -50,17 +50,17 @@ export function useUserForm(redirectPath = "/users") {
         passwordLength: data.password?.length,
         name: data.name,
         gender: data.gender,
-        birth_date: data.birth_date,
+        // birth_date: data.birth_date,
         phone: data.phone,
       })
 
       const userData: CreateUserData = {
         email: data.email,
         password: data.password,
-        name: data.name,
-        gender: data.gender,
-        birth_date: data.birth_date,
-        phone: data.phone,
+        name: data.name || "12",
+        gender: data.gender || "male",
+        // birth_date: data.birth_date || new Date().toISOString(),
+        phone: data.phone || "123123",
         role: data.role || "user",
       }
 

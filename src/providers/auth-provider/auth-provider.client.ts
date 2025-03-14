@@ -57,6 +57,17 @@ export const authProviderClient: AuthProvider = {
       const { data, error } = await supabaseBrowserClient.auth.signUp({
         email,
         password,
+
+        // todo: check this one
+        options: {
+          data: {
+            name,
+            gender: "male",
+          //   birth_date,
+            phone: "123123",
+            role: "admin",
+          },
+        },
       });
 
       if (error) {

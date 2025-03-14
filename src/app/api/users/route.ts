@@ -23,7 +23,7 @@ export async function POST(request: Request) {
         data: {
           name,
           gender,
-          birth_date,
+        //   birth_date,
           phone,
           role
         },

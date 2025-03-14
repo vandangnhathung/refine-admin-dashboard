@@ -4,7 +4,7 @@ export interface CreateUserData {
     password: string
     name: string
     gender: string
-    birth_date: string
+    // birth_date: string
     phone: string
     role: "admin" | "user"
   }
