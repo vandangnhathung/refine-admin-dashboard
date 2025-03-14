@@ -6,7 +6,7 @@ import { useForm } from "@refinedev/react-hook-form"
 import { useParams } from "next/navigation"
 import { useIsAdmin } from "@/hooks/useIsAdmin"
 import { useState } from "react"
-import { sampleFields } from "@/types/sampleFields"
+import { sampleFields } from "../../types/sampleFields"
 
 export default function SampleEdit() {
   const isAdmin = useIsAdmin()

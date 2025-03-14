@@ -1,8 +1,8 @@
 "use client"
 import { Box, TextField, Alert, Typography, CircularProgress } from "@mui/material"
 import { Create } from "@refinedev/mui"
-import { useSampleForm } from "@_sample-route/hooks/useSampleForm"
-import { sampleFields } from "@/types/sampleFields"
+import { useSampleForm } from "../hooks/useSampleForm"
+import { sampleFields } from "../types/sampleFields"
 
 export default function SampleCreate() {
   const { register, errors, handleSubmit, onSubmit, isSubmitting, formLoading, saveButtonProps, error, errorDetails } =

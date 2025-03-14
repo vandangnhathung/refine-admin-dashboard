@@ -3,7 +3,7 @@
 import { Box, TextField, Alert } from "@mui/material"
 import { Edit } from "@refinedev/mui"
 import { useForm } from "@refinedev/react-hook-form"
-import { userFields } from "@/types/userFields"
+import { userFields } from "../../types/userFields"
 import { useParams } from "next/navigation"
 import { useIsAdmin } from "@/hooks/useIsAdmin"
 import { useState } from "react"
