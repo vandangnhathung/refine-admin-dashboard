@@ -3,14 +3,13 @@
 import { Box, TextField, Alert } from "@mui/material"
 import { Edit } from "@refinedev/mui"
 import { useForm } from "@refinedev/react-hook-form"
-import { userFields } from "@/utils/userFields"
-import { useParams, useRouter } from "next/navigation"
+import { userFields } from "../../../../../Types/userFields"
+import { useParams } from "next/navigation"
 import { useIsAdmin } from "@/hooks/useIsAdmin"
 import { useState } from "react"
 
 export default function UsersEdit() {
   const isAdmin = useIsAdmin()
-  const router = useRouter()
   const params = useParams()
   const userId = params.id as string
   const [error, setError] = useState<string | null>(null)

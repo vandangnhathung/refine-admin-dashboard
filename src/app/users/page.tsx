@@ -73,7 +73,9 @@ export default function UserList() {
             <>
               <EditButton hideText recordItemId={row.id} />
               <ShowButton hideText recordItemId={row.id} />
-              <DeleteButton hideText recordItemId={row.id} />
+              <DeleteButton hideText recordItemId={row.id} onSuccess={(value) => {
+        console.log(value);
+      }} />
             </>
           );
         },

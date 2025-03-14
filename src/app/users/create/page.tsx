@@ -1,7 +1,7 @@
 "use client"
 import { Box, TextField, Alert, Typography, CircularProgress } from "@mui/material"
 import { Create } from "@refinedev/mui"
-import { userFields } from "@/utils/userFields"
+import { userFields } from "../../../../Types/userFields"
 import { useUserForm } from "@/hooks/use-user-form"
 
 export default function UserCreate() {
