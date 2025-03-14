@@ -1,7 +1,7 @@
 "use client"
 import { Box, TextField, Alert, Typography, CircularProgress } from "@mui/material"
 import { Create } from "@refinedev/mui"
-import { useSampleForm } from "@/hooks/useSampleForm"
+import { useSampleForm } from "@_sample-route/hooks/useSampleForm"
 import { sampleFields } from "@/types/sampleFields"
 
 export default function SampleCreate() {

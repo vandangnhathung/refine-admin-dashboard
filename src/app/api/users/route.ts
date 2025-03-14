@@ -5,7 +5,7 @@ import { NextResponse } from "next/server"
 export async function POST(request: Request) {
   try {
     // Parse the request body
-    const { email, password, name, gender, birth_date, phone, role } = await request.json()
+    const { email, password, name, gender, phone, role } = await request.json()
 
     // Basic validation
     if (!email || !password) {
@@ -23,7 +23,6 @@ export async function POST(request: Request) {
         data: {
           name,
           gender,
-        //   birth_date,
           phone,
           role
         },
