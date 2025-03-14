@@ -3,9 +3,9 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { useForm } from "@refinedev/react-hook-form"
-import { createUser, type CreateUserData } from "@/services/user-service"
+import { createSample, type CreateSampleData } from "@services/sample-service"
 
-export function useUserForm(redirectPath = "/users") {
+export function useSampleForm(redirectPath = "/sample") {
   const router = useRouter()
   const [error, setError] = useState<string | null>(null)
   const [errorDetails, setErrorDetails] = useState<any>(null)
@@ -20,7 +20,7 @@ export function useUserForm(redirectPath = "/users") {
     watch,
   } = useForm({
     refineCoreProps: {
-      resource: "users",
+      resource: "sample",
       redirect: "list",
       action: "create",
       onMutationError: (error) => {
@@ -41,26 +41,16 @@ export function useUserForm(redirectPath = "/users") {
       setError(null)
       setErrorDetails(null)
 
-      console.log("Submitting user data:", {
-        email: data.email,
-        passwordLength: data.password?.length,
+      console.log("Submitting sample data:", {
         name: data.name,
-        gender: data.gender,
-        // birth_date: data.birth_date,
-        phone: data.phone,
+        label: data.label,
       })
 
-      const userData: CreateUserData = {
-        email: data.email,
-        password: data.password,
-        name: data.name,
-        gender: data.gender,
-        // birth_date: data.birth_date || new Date().toISOString(),
-        phone: data.phone,
-        role: data.role,
+      const sampleData: CreateSampleData = {
+        sampleField: data.sampleField,
       }
 
-      await createUser(userData)
+      await createSample(sampleData)
 
       // Redirect to the users list on success
       router.push(redirectPath)
