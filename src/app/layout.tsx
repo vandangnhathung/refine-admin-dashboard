@@ -53,6 +53,16 @@ export default function RootLayout({
                           canDelete: true,
                         },
                       },
+                      {
+                        name: "sample-route",
+                        list: "/sample-route",
+                        create: "/sample-route/create",
+                        edit: "/sample-route/edit/:id",
+                        show: "/sample-route/show/:id",
+                        meta: {
+                          canDelete: true,
+                        },
+                      },
                     ]}
                     options={{
                       syncWithLocation: true,
