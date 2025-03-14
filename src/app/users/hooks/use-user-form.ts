@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { useForm } from "@refinedev/react-hook-form"
-import { createUser, type CreateUserData } from "@/services/user-service"
+import { createUser, type CreateUserData } from "@/app/users/services/user-service"
 
 export function useUserForm(redirectPath = "/users") {
   const router = useRouter()
