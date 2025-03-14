@@ -62,10 +62,10 @@ export const authProviderClient: AuthProvider = {
         options: {
           data: {
             name,
-            gender: "male",
+            gender: "",
           //   birth_date,
-            phone: "123123",
-            role: "admin",
+            phone: "",
+            role: "user",
           },
         },
       });

@@ -57,11 +57,11 @@ export function useUserForm(redirectPath = "/users") {
       const userData: CreateUserData = {
         email: data.email,
         password: data.password,
-        name: data.name || "12",
-        gender: data.gender || "male",
+        name: data.name,
+        gender: data.gender,
         // birth_date: data.birth_date || new Date().toISOString(),
-        phone: data.phone || "123123",
-        role: data.role || "user",
+        phone: data.phone,
+        role: data.role,
       }
 
       await createUser(userData)
